@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rga-NFT/precache-manifest.73e34de71a27b2d96ed1857c47282934.js"
+  "/rga-NFT/precache-manifest.2786a7d4358c1031ed4e22fa1aba68c4.js"
 );
 
 self.addEventListener('message', (event) => {
