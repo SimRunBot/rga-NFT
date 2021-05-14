@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/rga-nft/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/rga-nft/static/js/main.ed0f7123.chunk.js",
-    "main.js.map": "/rga-nft/static/js/main.ed0f7123.chunk.js.map",
-    "runtime-main.js": "/rga-nft/static/js/runtime-main.b6087a7b.js",
-    "runtime-main.js.map": "/rga-nft/static/js/runtime-main.b6087a7b.js.map",
-    "static/js/2.d799b390.chunk.js": "/rga-nft/static/js/2.d799b390.chunk.js",
-    "static/js/2.d799b390.chunk.js.map": "/rga-nft/static/js/2.d799b390.chunk.js.map",
-    "index.html": "/rga-nft/index.html",
-    "precache-manifest.3e2f182fb2637b08e06fcf8fdc4fb4b4.js": "/rga-nft/precache-manifest.3e2f182fb2637b08e06fcf8fdc4fb4b4.js",
-    "service-worker.js": "/rga-nft/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/rga-nft/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.d799b390.chunk.js.LICENSE.txt": "/rga-nft/static/js/2.d799b390.chunk.js.LICENSE.txt"
+    "main.css": "/rga-NFT/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/rga-NFT/static/js/main.ed0f7123.chunk.js",
+    "main.js.map": "/rga-NFT/static/js/main.ed0f7123.chunk.js.map",
+    "runtime-main.js": "/rga-NFT/static/js/runtime-main.59322958.js",
+    "runtime-main.js.map": "/rga-NFT/static/js/runtime-main.59322958.js.map",
+    "static/js/2.61ea055a.chunk.js": "/rga-NFT/static/js/2.61ea055a.chunk.js",
+    "static/js/2.61ea055a.chunk.js.map": "/rga-NFT/static/js/2.61ea055a.chunk.js.map",
+    "index.html": "/rga-NFT/index.html",
+    "precache-manifest.73e34de71a27b2d96ed1857c47282934.js": "/rga-NFT/precache-manifest.73e34de71a27b2d96ed1857c47282934.js",
+    "service-worker.js": "/rga-NFT/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/rga-NFT/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.61ea055a.chunk.js.LICENSE.txt": "/rga-NFT/static/js/2.61ea055a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b6087a7b.js",
-    "static/js/2.d799b390.chunk.js",
+    "static/js/runtime-main.59322958.js",
+    "static/js/2.61ea055a.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
     "static/js/main.ed0f7123.chunk.js"
   ]
