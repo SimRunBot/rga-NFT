@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rga-nft/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/rga-nft/static/js/main.ed0f7123.chunk.js",
+    "main.js.map": "/rga-nft/static/js/main.ed0f7123.chunk.js.map",
+    "runtime-main.js": "/rga-nft/static/js/runtime-main.b6087a7b.js",
+    "runtime-main.js.map": "/rga-nft/static/js/runtime-main.b6087a7b.js.map",
+    "static/js/2.d799b390.chunk.js": "/rga-nft/static/js/2.d799b390.chunk.js",
+    "static/js/2.d799b390.chunk.js.map": "/rga-nft/static/js/2.d799b390.chunk.js.map",
+    "index.html": "/rga-nft/index.html",
+    "precache-manifest.3e2f182fb2637b08e06fcf8fdc4fb4b4.js": "/rga-nft/precache-manifest.3e2f182fb2637b08e06fcf8fdc4fb4b4.js",
+    "service-worker.js": "/rga-nft/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/rga-nft/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.d799b390.chunk.js.LICENSE.txt": "/rga-nft/static/js/2.d799b390.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6087a7b.js",
+    "static/js/2.d799b390.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.ed0f7123.chunk.js"
+  ]
+}
