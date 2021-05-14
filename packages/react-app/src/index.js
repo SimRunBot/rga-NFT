@@ -5,6 +5,11 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import "./index.css";
 import App from "./App";
 
+import { ThemeProvider } from '@material-ui/core/styles';
+
+import theme from "./styles/theme";
+
+
 // You should replace this url with your own and put it into a .env file
 // See all subgraphs: https://thegraph.com/explorer/
 const client = new ApolloClient({
@@ -13,7 +18,11 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <App />
+
+    <ThemeProvider
+      theme={theme}>
+      <App />
+    </ThemeProvider>
   </ApolloProvider>,
   document.getElementById("root"),
 );

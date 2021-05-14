@@ -1,9 +1,12 @@
-import erc20Abi from "./abis/erc20.json";
-import ownableAbi from "./abis/ownable.json";
+
+
+import erc667Abi from ".\\abis\\contracts\\ERC667.sol\\ERC677.json";
+import rganftAbi from "./abis/contracts/RGANFT.sol/RGANFT.json";
+
 
 const abis = {
-  erc20: erc20Abi,
-  ownable: ownableAbi,
+  rganft: rganftAbi.abi,
+  erc667: erc667Abi.abi,
 };
 
 export default abis;

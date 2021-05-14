@@ -1,0 +1,4 @@
+yarn hardhat compile
+yarn hardhat run scripts/deploy_rganft.js --network kovan
+replace contract address in src/addresses.js
+run verify_contract command with new contract address

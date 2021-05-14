@@ -1,0 +1,5 @@
+yarn hardhat verify --network kovan 0x85cad4Cf034De01fC37d560e0A3279D56221bF1B "0xdD3782915140c8f3b190B5D67eAc6dc5760C46E9" "0xa36085f69e2889c224210f603d836748e7dc0088" "0x6c3699283bda56ad74f6b855546325b68d482e983852a7a82979cc4807b641f4" 
+
+
+from here:
+https://forum.openzeppelin.com/t/verify-smart-contract-inheriting-from-openzeppelin-contracts/4119
