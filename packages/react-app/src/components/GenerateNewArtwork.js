@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from "@material-ui/core/Grid";
@@ -11,19 +10,15 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       marginBottom: theme.spacing(1),
     },
-
   },
   inputTextField: {
     margin: theme.spacing(2),
     borderRadius: 25,
-    
   },
   roundedPaper: {
     borderRadius: theme.shape.borderRadius,
-
-
   },
-  GenerateButton:{
+  GenerateButton: {
     margin: theme.spacing(2),
     padding: theme.spacing(2),
     borderRadius: theme.shape.borderRadius,
@@ -42,15 +37,12 @@ async function generateNewArtwork(provider, contract, artworkName) {
   await contract.requestNewRandomArtwork(Math.floor(Math.random() * 1000), artworkName);
 }
 
-
-
 function GenerateNewArtwork({ provider, contract }) {
   const [textInput, setTextInput] = useState("");
   const classes = useStyles();
   if (!provider || !contract) { return <p>loading</p>; }
 
   function handleInputchange(event) {
-    //event.preventDefault();
     setTextInput(event.target.value);
   }
 
@@ -76,7 +68,6 @@ function GenerateNewArtwork({ provider, contract }) {
         <Grid item >
           <Button
             className={classes.GenerateButton}
-            
             variant="outlined"
             color="secondary"
             onClick={() => generateNewArtwork(provider, contract, textInput)}>
@@ -87,6 +78,5 @@ function GenerateNewArtwork({ provider, contract }) {
     </Paper>
   );
 }
-
 
 export default GenerateNewArtwork;

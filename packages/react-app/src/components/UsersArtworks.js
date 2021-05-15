@@ -48,7 +48,7 @@ function UsersArtworks({ contract, userAddress }) {
       let artwork_ids = [];
       for (let i = 0; i < allArtworkCount; i++) {
         let _artwork_owner = await contract.ownerOf(i);
-        if (_artwork_owner == userAddress) {
+        if (_artwork_owner === userAddress) {
           artwork_ids.push(i);
         }
       }
@@ -91,8 +91,8 @@ function UsersArtworks({ contract, userAddress }) {
             contract={contract}
             userAddress={userAddress}
             id={artworkIds[index]}
-            key={index} 
-            showOwner={false}/>
+            key={index}
+            showOwner={false} />
         );
       })
         : ""

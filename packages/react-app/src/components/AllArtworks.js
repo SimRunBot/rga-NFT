@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-
-import Artwork from "./Artwork.js";
-
 import LinearProgress from '@material-ui/core/LinearProgress';
 import { Paper } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
+import Artwork from "./Artwork.js";
 
 const useStyles = makeStyles((theme) => ({
 
@@ -69,8 +67,8 @@ function AllArtworks({ contract }) {
             artwork={_artwork}
             id={index}
             contract={contract}
-            key={index} 
-            showOwner={true}/>
+            key={index}
+            showOwner={true} />
         );
       })
         : ""}

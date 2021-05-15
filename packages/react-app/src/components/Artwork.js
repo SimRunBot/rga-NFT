@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import Artworksketch from "./Artworksketch";
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -27,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-
 function Artwork({ artwork, contract, userAddress, id, showOwner }) {
   const [toAddress, setToAddress] = useState();
   const [ownerOf, setOwnerOf] = useState();
@@ -35,7 +33,7 @@ function Artwork({ artwork, contract, userAddress, id, showOwner }) {
 
   useEffect(() => {
     console.log(" artwork useeffect");
-    if (!showOwner || !contract || id==undefined) return;
+    if (!showOwner || !contract || id === undefined) return;
     console.log("all artwork use effect");
     async function getOwnerOfId(_id) {
       let ownerOfId = await contract.ownerOf(_id);
@@ -56,11 +54,9 @@ function Artwork({ artwork, contract, userAddress, id, showOwner }) {
       alert("no receiving address set");
       return;
     }
-
     // TODO implement input validation to allow only valid addresses as input
     await contract.transferFrom(userAddress, toAddress, id);
   }
-
 
   return (
     <>

@@ -8,10 +8,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
-
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
-
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -87,7 +85,7 @@ function Navbar({ provider,
                 className={classes.menu}
               >
                 <MenuItem onClick={handleClose}>
-                  <Link to="/" className={classes.menuItem} >Home</Link>
+                  <Link to="/rga-NFT" className={classes.menuItem} >Home</Link>
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
                   <Link to="/generateRGANFT" className={classes.menuItem} >Generate New Artwork</Link>
@@ -117,7 +115,7 @@ function Navbar({ provider,
             <>
               <Typography variant="h6"
                 className={classes.toolbar}>
-                <Link to="/" className={classes.navbarItem} >Home</Link>
+                <Link to="/rga-NFT" className={classes.navbarItem} >Home</Link>
 
                 <Link to="/generateRGANFT" className={classes.navbarItem} >Generate New Artwork</Link>
 

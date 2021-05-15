@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import { Contract } from "@ethersproject/contracts";
 import { addresses, abis } from "@project/contracts";
@@ -13,17 +12,13 @@ import GET_TRANSFERS from "./graphql/subgraph";
 
 import UsersArtworks from "./components/UsersArtworks";
 import GenerateNewArtwork from "./components/GenerateNewArtwork";
-import ReadArtworkData from "./components/ReadArtworkData";
+import Home from "./components/Home";
 import AllArtworks from "./components/AllArtworks";
 import WrongNetworkDialog from "./components/WrongNetworkDialog";
 import Navbar from "./components/Navbar";
-
-
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
 import LinearProgress from '@material-ui/core/LinearProgress';
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,12 +55,11 @@ function App() {
 
     async function fillStates() {
       let _network = await provider.getNetwork();
-      if (_network.name == "kovan") {
+      if (_network.name === "kovan") {
         console.log("ON NETWORK: ", _network.name);
         setWrongNetwork(false);
       }
       else {
-        //alert("please connect to kovan testnet");
         setWrongNetwork(true);
         return;
       }
@@ -78,11 +72,10 @@ function App() {
     }
     fillStates();
     setConnected(true);
-    return () => isMounted = false;
+    return () => { isMounted = false; }
   }, [provider]);
 
   return (
-
     <Grid
       container
       direction="column"
@@ -111,11 +104,17 @@ function App() {
 
           <Switch>
             {!connected ?
-              <Grid item>
-                <p>Connect to Kovan in Metamask</p>
-                <LinearProgress
-                  color={"secondary"} />
-              </Grid>
+              <>
+                <Grid item>
+                  <Home />
+                </Grid>
+
+                <Grid item>
+                  <p>Connect to Kovan in Metamask</p>
+                  <LinearProgress
+                    color={"secondary"} />
+                </Grid>
+              </>
               :
               <>
                 <Route path="/generateRGANFT">
@@ -133,11 +132,11 @@ function App() {
                     justify="flex-start"
                     alignItems="center"
                     className={classes.content} >
-                    
-                      <UsersArtworks
-                        contract={contract}
-                        userAddress={userAddress} />
-                    
+
+                    <UsersArtworks
+                      contract={contract}
+                      userAddress={userAddress} />
+
                   </Grid>
                 </Route>
 
@@ -152,15 +151,11 @@ function App() {
                   </Grid>
                 </Route>
 
-                <Route exact path="/">
+                <Route exact path="/rga-NFT">
                   <Grid item>
-                    <ReadArtworkData
-                      provider={provider}
-                      contract={contract}
-                      userAddress={userAddress} />
+                    <Home />
                   </Grid>
                 </Route>
-
               </>
             }
           </Switch>
