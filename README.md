@@ -1,5 +1,5 @@
 # Welcome to the RGA-NFT Dapp
-## interact with it here: [https://simrunbot.github.io/rga-NFT/](https://simrunbot.github.io/rga-NFT/)
+## UPDATE: since kovan testnet has been depricated this dapp no longer works
 
 This Dapp allows you to generate new random artworks.
 
